@@ -125,8 +125,48 @@
       font-weight: 500;
     }
 
+    .skills {
+      margin-top: 28px;
+      text-align: left;
+    }
+
+    .skills-label {
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .skills-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .skills-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .tag-lang  { background: rgba(99,102,241,0.15); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3); }
+    .tag-db    { background: rgba(245,158,11,0.12);  color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+    .tag-infra { background: rgba(16,185,129,0.12);  color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+    .tag-gis   { background: rgba(236,72,153,0.12);  color: #f9a8d4; border: 1px solid rgba(236,72,153,0.3); }
+
     .footer {
-      margin-top: 36px;
+      margin-top: 28px;
       font-size: 0.75rem;
       color: var(--muted);
     }
@@ -241,6 +281,20 @@
         </div>
       </li>
     </ul>
+    <div class="skills">
+      <div class="skills-label">🛠 기술 스택</div>
+      <div class="skills-tags">
+        <span class="tag tag-lang">Java</span>
+        <span class="tag tag-lang">JSP</span>
+        <span class="tag tag-lang">CSS</span>
+        <span class="tag tag-gis">ArcGIS</span>
+        <span class="tag tag-db">Oracle</span>
+        <span class="tag tag-db">MySQL</span>
+        <span class="tag tag-db">MariaDB</span>
+        <span class="tag tag-infra">Unix</span>
+        <span class="tag tag-infra">JEUS</span>
+      </div>
+    </div>
     <p class="footer">풀스택 바이브코딩 실습 프로젝트</p>
   </div>
 </body>
